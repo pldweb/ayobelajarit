@@ -1,0 +1,35 @@
+
+/* root */
+
+body , html {
+
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+/* navbar-section */
+img.image-logo{
+
+  width: 25%;
+  height: auto;
+  
+}
+
+a.menu-text {
+ 
+  font-weight: 500;
+  font-size: 1em;
+  margin-right: 15px;
+  color: #161616e6 !important;
+}
+
+a.menu-text:hover {
+  color: #1ebd32 !important;
+}

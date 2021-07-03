@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,12 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages/landing-pages/login');
-});
+
+// AuthControler
+Route::get('/', [AuthController::class, 'loginView'])->name('login.auth');
+Route::get('/signup', [AuthController::class, 'signupView'])->name('signup.auth');
 
 
-Route::get('clubs', [LandingPageController::class, 'clubs'])->name('landing.clubs');
-Route::get('managers', [LandingPageController::class, 'managers'])->name('landing.managers');
-Route::get('players', [LandingPageController::class, 'players'])->name('landing.players');
+// LandingPageController
+Route::get('/panduan-belajar', [LandingPageController::class, 'panduanView'])->name('panduan.view');
+Route::get('/kelas-belajar', [LandingPageController::class, 'kelasView'])->name('kelas.view');
+Route::get('/hubungi-belajar', [LandingPageController::class, 'hubungiView'])->name('hubungi.view');
 Route::get('stadiums', [LandingPageController::class, 'stadiums'])->name('landing.stadiums');

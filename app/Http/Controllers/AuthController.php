@@ -4,60 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LandingPageController extends Controller
+class AuthController extends Controller
 {
-
-
-    public function panduanView(){
-
-        return view('pages.landing-pages.panduan');
-
-    }
-
-
-    public function kelasView(){
-
-        return view('pages.landing-pages.kelas');
-    }
-
-
-    public function hubungiView(){
-        return view('pages.landing-pages.hubungi');
-    }
-
-
-    public function stadiums(){
-        return view('pages.landing-pages.stadiums');
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function loginView()
     {
-        //
+        return view("auth.login");
     }
 
     /**

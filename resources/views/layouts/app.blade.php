@@ -4,7 +4,16 @@
 
   @include('include.meta')
   
-  <title>@yield('title') | Landing Page</title>
+  <title>@yield('title') | ayobelajarit.com</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="{{ asset('/dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/dist/css/style.css') }}">
+
+  {{-- Link font poppins --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 
   {{-- Favicon --}}
@@ -12,15 +21,12 @@
   <link rel="shortcut icon" href="" type="image/x-icon">
 
   @stack('before-style')
-  
-  {{-- Style --}}
-  @include('include.style')
 
   @stack('after-style')
 
 </head>
 <body>
-  <div class="container-xxl mx-auto p-0  position-relative header-2-2" style="font-family: 'Poppins', sans-serif">
+
    
     @include('include.header')
       @yield('content')
