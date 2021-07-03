@@ -8,8 +8,13 @@ body , html {
 }
 
 
+h1,h2,h3,h4,h5,h6,a {
+  color: #161616e6;
+}
 
-
+p {
+  color: #888888;
+}
 
 
 
@@ -26,10 +31,40 @@ a.menu-text {
  
   font-weight: 500;
   font-size: 1em;
-  margin-right: 15px;
+  margin-right: 20px;
   color: #161616e6 !important;
 }
 
 a.menu-text:hover {
   color: #1ebd32 !important;
+}
+
+
+
+
+/* Login-section */
+
+
+.login-section {
+
+  padding: 50px 0;
+}
+
+.form-section {
+
+  padding: 30px;
+  border: 1px solid #dededeaa;
+  border-radius: 5px;
+}
+
+
+.title-login-text {
+
+  margin: 30px 0;
+}
+
+.form-section .form-control {
+
+  border: none;
+  background-color: #e4efe6;
 }

@@ -8,6 +8,12 @@ class LandingPageController extends Controller
 {
 
 
+    public function dashboardView(){
+
+        return view('layouts.dashboard');
+    }
+
+
     public function panduanView(){
 
         return view('pages.landing-pages.panduan');

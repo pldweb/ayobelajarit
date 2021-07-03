@@ -22,6 +22,7 @@ Route::get('/signup', [AuthController::class, 'signupView'])->name('signup.auth'
 
 
 // LandingPageController
+Route::get('/dashboard', [LandingPageController::class, 'dashboardView'])->name('dashboard.view');
 Route::get('/panduan-belajar', [LandingPageController::class, 'panduanView'])->name('panduan.view');
 Route::get('/kelas-belajar', [LandingPageController::class, 'kelasView'])->name('kelas.view');
 Route::get('/hubungi-belajar', [LandingPageController::class, 'hubungiView'])->name('hubungi.view');
