@@ -15,15 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages/landing-pages/index');
+    return view('pages/landing-pages/login');
 });
-
-// Route simple view 
-// Route::view('/clubs', 'pages/landing-pages/clubs');
-// Route::view('/managers', 'pages/landing-pages/managers');
-// Route::view('/players', 'pages/landing-pages/players');
-// Route::view('/stadiums', 'pages/landing-pages/stadiums');
-
 
 
 Route::get('clubs', [LandingPageController::class, 'clubs'])->name('landing.clubs');
