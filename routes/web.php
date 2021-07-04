@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Index
+Route::view('/', 'selamatdatang');
 
 // AuthControler
-Route::get('/', [AuthController::class, 'loginView'])->name('login.auth');
+Route::get('/login', [AuthController::class, 'loginView'])->name('login.auth');
 Route::get('/signup', [AuthController::class, 'signupView'])->name('signup.auth');
 
 
